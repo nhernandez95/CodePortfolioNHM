@@ -206,4 +206,15 @@
       grid-template-columns: 1fr; /* single column on narrow screens */
     }
   }
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: var(--text-color);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  margin-top: 2rem;
+  background-color: var(--card-bg-color);
+}
+
   
