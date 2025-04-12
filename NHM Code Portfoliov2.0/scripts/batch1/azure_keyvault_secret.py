@@ -1,1 +1,0 @@
-# Placeholder for azure_keyvault_secret.py
