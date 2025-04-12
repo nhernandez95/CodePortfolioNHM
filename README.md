@@ -15,8 +15,6 @@ CodePortfolioNHM/
 ├── css/
 │   └── custom-style.css
 ├── projects/
-│   ├── batch1.html
-│   ├── batch2.html
 │   ├── NHM-Portfolio.html
 │   └── NHM-Portfolio-Description.md
 ├── scripts/
