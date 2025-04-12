@@ -1,0 +1,209 @@
+/* Base Styles and Theme Variables */
+:root {
+    --bg-color: #FFFFFF;
+    --text-color: #333333;
+    --nav-bg-color: #FFFFFF;
+    --nav-text-color: #333333;
+    --link-color: #0066cc;
+    --card-bg-color: #f9f9f9;
+    --card-text-color: #333333;
+    --button-bg-color: #0066cc;
+    --button-text-color: #FFFFFF;
+    --button-bg-hover: #005bb5;
+  }
+  
+  [data-theme="dark"] {
+    --bg-color: #121212;
+    --text-color: #E4E4E4;
+    --nav-bg-color: #1e1e1e;
+    --nav-text-color: #E4E4E4;
+    --link-color: #4dabf7;
+    --card-bg-color: #1c1c1c;
+    --card-text-color: #E4E4E4;
+    --button-bg-color: #4dabf7;
+    --button-text-color: #FFFFFF;
+    --button-bg-hover: #369bf6;
+  }
+  
+  /* Global Styles */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: 'Inter', 'Segoe UI', Tahoma, sans-serif;
+    background: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    /* Add padding top to prevent content being hidden under fixed nav */
+    padding-top: 70px;
+    transition: background 0.3s, color 0.3s;
+  }
+  main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  h3 {
+    font-size: 1.2rem;
+    margin: 0 0 0.5rem;
+  }
+  p {
+    margin-bottom: 1rem;
+    line-height: 1.5;
+  }
+  
+  /* Navigation Bar */
+  nav {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    background: var(--nav-bg-color);
+    color: var(--nav-text-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 1rem;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    z-index: 1000;
+    transition: background 0.3s, color 0.3s;
+  }
+  nav .brand {
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+  nav #theme-toggle {
+    font-size: 1.2rem;
+    background: none;
+    border: none;
+    color: var(--nav-text-color);
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  nav #theme-toggle:hover {
+    transform: scale(1.1);
+  }
+  nav #theme-toggle:focus {
+    outline: 2px solid var(--link-color);
+  }
+  
+  /* About Me Section */
+  #about {
+    padding: 4rem 1rem;
+    text-align: center;
+  }
+  #about p {
+    max-width: 600px;
+    margin: 0 auto 1.5rem;
+  }
+  .social-links a {
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+    color: var(--text-color);
+    transition: color 0.3s, transform 0.3s;
+  }
+  .social-links a:hover {
+    color: var(--link-color);
+    transform: scale(1.1);
+  }
+  .social-links a:focus {
+    outline: 2px solid var(--link-color);
+    outline-offset: 4px;
+  }
+  
+  /* Technologies Section */
+  #technologies {
+    padding: 3rem 1rem;
+    text-align: center;
+  }
+  .tech-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    font-size: 3rem; /* controls icon size since devicon and FA are fonts */
+    color: var(--text-color);
+    margin-top: 1rem;
+  }
+  .tech-icons i {
+    transition: transform 0.3s, color 0.3s;
+  }
+  .tech-icons i:hover {
+    transform: scale(1.15);
+    color: var(--link-color);
+  }
+  
+  /* Featured Projects Section */
+  #projects {
+    padding: 3rem 1rem;
+  }
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+  .project-card {
+    background: var(--card-bg-color);
+    color: var(--card-text-color);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  }
+  .project-card h3 {
+    margin-bottom: 0.5rem;
+    color: inherit;
+  }
+  .project-card p {
+    flex: 1 0 auto;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Download Button */
+  .download-btn {
+    display: inline-block;
+    text-decoration: none;
+    background: var(--button-bg-color);
+    color: var(--button-text-color);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: background 0.3s;
+    text-align: center;
+  }
+  .download-btn:hover {
+    background: var(--button-bg-hover);
+  }
+  .download-btn:focus {
+    outline: 2px solid var(--link-color);
+    outline-offset: 2px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 600px) {
+    nav .brand {
+      font-size: 1rem;
+    }
+    #about p {
+      font-size: 0.95rem;
+    }
+    .projects-grid {
+      grid-template-columns: 1fr; /* single column on narrow screens */
+    }
+  }
+  

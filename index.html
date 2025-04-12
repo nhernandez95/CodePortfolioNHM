@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nathanael Hernandez Portfolio</title>
+  <!-- Google Font: Inter -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" />
+  <!-- FontAwesome for icons (social, theme toggle) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+  <!-- Devicon for technology logos -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  <!-- Main CSS file -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-theme="light">
+  <!-- Fixed Navigation Bar -->
+  <nav>
+    <span class="brand">Nathanael Hernandez</span>
+    <button id="theme-toggle" type="button" aria-label="Toggle dark mode">
+      <i class="fas fa-moon"></i>
+    </button>
+  </nav>
+
+  <main>
+    <!-- About Me Section -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Hi, I'm <strong>Nathanael Hernandez</strong>, a data analytics developer with experience in Python, SQL, and cloud technologies. I enjoy turning data into actionable insights and building tools to automate workflows.</p>
+      <!-- Social Links -->
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/nathanael-j-hernandez-106a00136/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/nhernandez95/" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      </div>
+    </section>
+
+    <!-- Technologies Used Section -->
+    <section id="technologies">
+      <h2>Technologies Used</h2>
+      <div class="tech-icons">
+        <!-- Using Devicon icons with titles for accessibility -->
+        <i class="devicon-python-plain colored" title="Python" aria-hidden="true"></i>
+        <i class="devicon-microsoftsqlserver-plain colored" title="SQL" aria-hidden="true"></i>
+        <i class="devicon-azure-plain colored" title="Azure" aria-hidden="true"></i>
+        <i class="devicon-github-original colored" title="GitHub" aria-hidden="true"></i>
+        <!-- For technologies without Devicon icons, use FontAwesome or placeholder -->
+        <i class="fas fa-database" title="Databricks" aria-hidden="true"></i>
+        <i class="fas fa-chart-bar" title="Power BI" aria-hidden="true"></i>
+      </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section id="projects">
+      <h2>Featured Projects</h2>
+      <div class="projects-grid">
+        <!-- Project Card 1 -->
+        <div class="project-card">
+          <h3>NHM Deduping tables by chunks.sql</h3>
+          <p>This script efficiently deduplicates large datasets by processing records in 7-day chunks. It's designed to minimize memory overhead and system strain by breaking down the operation into manageable intervals.</p>
+          <a href="scripts/NHM_Universal_Deduping tables by chunks.sql" class="btn download-btn" download>Download</a>
+        </div>
+        <!-- Project Card 2 -->
+        <div class="project-card">
+          <h3>NHM RandomPWGen.py</h3>
+          <p>Generates a random 12-character password including at least one lowercase letter, one uppercase letter, one digit, and one symbol.</p>
+          <a href="scripts/NHM_Universal_RandomPWGen.py" class="btn download-btn" download>Download</a>
+        </div>
+        <!-- Project Card 3 -->
+        <div class="project-card">
+          <h3>NHM sftptest.py</h3>
+          <p>Tests the connection to a remote server via SFTP using Paramiko with a private key and passphrase (for verifying server access).</p>
+          <a href="scripts/NHM_Universal_sftptest.py" class="btn download-btn" download>Download</a>
+        </div>
+        <!-- Project Card 4 -->
+        <div class="project-card">
+          <h3>Filter removal script excel.osts</h3>
+          <p>Office Script for Excel that clears all auto-filter criteria on the active worksheet (removes any applied filters in an Excel sheet).</p>
+          <a href="scripts/Filter%20removal%20script%20excel.osts" class="btn download-btn" download>Download</a>
+        </div>
+        <!-- Project Card 5 -->
+        <div class="project-card">
+          <h3>NHM Active Client Report.py</h3>
+          <p>Downloads a CSV from Azure Blob Storage, processes it with pandas, updates an Excel report with the results, and uploads the updated file back to Blob storage.</p>
+          <a href="scripts/NHM_Universal_Active_Client_Report.py" class="btn download-btn" download>Download</a>
+        </div>
+        <!-- Project Card 6 -->
+        <div class="project-card">
+          <h3>NHM Card1 Excel Report.py</h3>
+          <p>Combines multiple CSV files from Azure Blob Storage into a single Excel report using pandas, then uploads the compiled report back to Blob storage.</p>
+          <a href="scripts/NHM_Universal_Card1_Excel_Report.py" class="btn download-btn" download>Download</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Main JS file -->
+  <script src="script.js"></script>
+</body>
+</html>

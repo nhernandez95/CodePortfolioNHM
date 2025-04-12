@@ -1,0 +1,4 @@
+-- © 2025 Nathanael Hernandez – Universal version
+-- This SQL script has been sanitized to remove proprietary names and sensitive data.
+
+{"version":"0.3.0","body":"function main(workbook: ExcelScript.Workbook) {\n    // Get the active worksheet.\n    let selectedSheet = workbook.getActiveWorksheet();\n\n    // Clear auto filter on the selected sheet.\n    selectedSheet.getAutoFilter().clearCriteria();\n}","description":"","copilotMetadata":null,"parameterInfo":"{\"version\":1,\"originalParameterOrder\":[],\"parameterSchema\":{\"type\":\"object\",\"default\":{},\"x-ms-visibility\":\"internal\"},\"returnSchema\":{\"type\":\"object\",\"properties\":{}},\"signature\":{\"comment\":\"\",\"parameters\":[{\"name\":\"workbook\",\"comment\":\"\"}]}}","apiInfo":"{\"variant\":\"synchronous\",\"variantVersion\":2}"}
