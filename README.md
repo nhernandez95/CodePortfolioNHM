@@ -15,9 +15,6 @@ CodePortfolioNHM/
 ├── css/
 │   └── custom-style.css
 ├── projects/
-│   ├── automated-reporting.html
-│   ├── etl-optimizer.html
-│   ├── rep-code-activity.html
 │   ├── batch1.html
 │   ├── batch2.html
 │   ├── NHM-Portfolio.html
@@ -27,21 +24,6 @@ CodePortfolioNHM/
 │   └── batch2/
 └── index.html
 ```
-
----
-
-## 🌟 Featured Projects
-
-### 🔸 Automated Reporting with Power BI & Azure
-ETL + reporting pipeline that reduced delivery time by 80% using Power BI, Azure Data Factory, and Python.
-
-### 🔸 ETL Pipeline Optimizer
-Spark and Databricks-based solution that improved pipeline runtime by 60%.
-
-### 🔸 Rep Code Activity (SQL)
-SQL script that determines active/inactive status for rep codes using dynamic test data simulation.
-
----
 
 ## 📦 Batch Projects
 
