@@ -14,7 +14,6 @@ CodePortfolioNHM/
 ├── css/
 │   └── custom-style.css
 ├── projects/
-│   ├── rep-code-activity.html
 │   ├── NHM-Portfolio.html
 │   └── NHM-Portfolio-Description.md
 ├── scripts/
